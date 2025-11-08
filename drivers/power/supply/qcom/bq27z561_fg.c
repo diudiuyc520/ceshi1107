@@ -1364,7 +1364,7 @@ static int fg_get_property(struct power_supply *psy, enum power_supply_property 
 		break;
 	case POWER_SUPPLY_PROP_VOLTAGE_MAX:
 		if (bq->old_hw) {
-			val->intval = 4450000;
+			val->intval = 4350000;
 			break;
 		}
 		val->intval = fg_read_charging_voltage(bq);
